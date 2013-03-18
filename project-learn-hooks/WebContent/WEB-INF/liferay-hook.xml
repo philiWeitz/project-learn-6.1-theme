@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hook PUBLIC "-//Liferay//DTD Hook 6.1.0//EN" "http://www.liferay.com/dtd/liferay-hook_6_1_0.dtd">
+<hook>
+	<language-properties>Language-ext_en.properties</language-properties>
+	<language-properties>Language-ext_fi.properties</language-properties>
+	<custom-jsp-dir>/WEB-INF/jsp</custom-jsp-dir>
+<!-- 	<custom-jsp-global>false</custom-jsp-global> -->
+</hook>

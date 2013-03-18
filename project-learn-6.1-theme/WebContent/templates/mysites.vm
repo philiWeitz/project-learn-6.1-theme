@@ -1,0 +1,24 @@
+
+<div class="mysites-selector">
+	<ul class="site-list-container">
+		<li class="default-entry">
+			<span class="title">#language("dropdown-site-selector")</span>
+			#if ($user.hasMySites())
+			<ul class="site-list">
+				#foreach ($entry in $user.getMySites()) 
+					#if (!$entry.isControlPanel() && !$entry.isUser() && $entry.hasPublicLayouts())
+						<li class="site-entry public">
+							<a href="$themeDisplay.getPathFriendlyURLPublic()$entry.getFriendlyURL()">$entry.getName() (#language("public"))</a>
+						</li>
+					#end
+					#if (!$entry.isControlPanel() && !$entry.isUser() && $entry.hasPrivateLayouts())
+						<li class="site-entry private">
+							<a href="$themeDisplay.getPathFriendlyURLPrivateGroup()$entry.getFriendlyURL()">$entry.getName() (#language("private"))</a>
+						</li>
+					#end
+				#end
+			</ul>
+			#end
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,18 @@
+#set ($groupService = $serviceLocator.findService("com.liferay.portal.service.GroupLocalService"))
+
+#set ($groupSchool = $groupService.getFriendlyURLGroup($layout.getCompanyId(), "/guest"))
+#set ($groupLearning = $groupService.getFriendlyURLGroup($layout.getCompanyId(), "/opiskelu"))
+#set ($groupIntra = $groupService.getFriendlyURLGroup($layout.getCompanyId(), "/intra"))
+
+#macro (getLayoutCssClass3 $compGroup)
+	#if ($layout.getGroup().equals($compGroup)))
+		selected
+	#end
+#end
+
+
+#set ($theme_custom_css_class = $getterUtil.getString($sessionClicks.get($request, "theme_custom_css_class", "")))
+
+#if ($panelsMinimized != "")
+#set ($css_class = "${css_class} $theme_custom_css_class")
+#end
