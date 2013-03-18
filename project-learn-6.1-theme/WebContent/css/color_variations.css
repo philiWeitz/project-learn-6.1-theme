@@ -1,0 +1,123 @@
+#skin-selector {
+     display: inline-block;
+     padding: 11px 0;
+     position: absolute;
+     right: 295px;
+     top: 0;
+     z-index: 2;
+}
+
+.signed-out #skin-selector {
+     right: 0px;
+}
+
+#skin-selector a {
+     -moz-border-radius: 5px;
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+     border: 2px solid #4B6C87;
+     display: block;
+     float: left;
+     height: 12px;
+     margin-right: 5px;
+     text-indent: -9999px;
+     width: 12px;
+}
+
+#skin-selector a:hover {
+     border: 2px solid #243342;
+}
+
+#skin-selector a.skin-bttn-yellow {
+     background: url(../images/learn/color-variations/yellow-wood-bg.png) repeat;
+}
+#skin-selector a.skin-bttn-white {
+     background: url(../images/learn/color-variations//white-wood-bg.png) repeat;
+}
+
+#skin-selector a.skin-bttn-green {
+     background: url(../images/learn/color-variations/green-wood-bg.png) repeat;
+}
+
+#skin-selector a.skin-bttn-default {
+     background: url(../images/learn/blue-wood-bg.png) repeat;
+     margin-left: 5px;
+}
+
+/* ---------- Skin Yellow ---------- */
+
+.colorscheme-yellow {
+     background: #e6bf02 url(../images/learn/color-variations/yellow-wood-bg.png) repeat;
+}
+.colorscheme-yellow .com-logo {
+    background: url(../images/learn/color-variations/com-logo-gray.png);
+    width: 222px;
+    height: 71px;
+	position: absolute;
+	top: 22px;
+	left: 5px;
+}
+.colorscheme-yellow #container {
+	background: #F8F7F2;
+}
+.colorscheme-yellow #bg-container .top-img {
+    background: url(../images/learn/color-variations/big-leafs-blue.png) no-repeat transparent;
+}
+.colorscheme-yellow #bg-container .right-side-img {
+	background: url(../images/learn/color-variations/two-leafs-blue.png);
+}
+.colorscheme-yellow .main-sites .selected {
+    background: #F8F7F2;
+}
+
+/* ---------- Skin White ---------- */
+
+.colorscheme-white {
+     background: #e4e4e4 url(../images/learn/color-variations/white-wood-bg.png) repeat;
+}
+.colorscheme-white .com-logo {
+    background: url(../images/learn/color-variations/com-logo-gray.png);
+    width: 222px;
+    height: 71px;
+	position: absolute;
+	top: 22px;
+	left: 5px;
+}
+.colorscheme-white #container {
+	background: #FFF;
+}
+.colorscheme-white #bg-container .top-img {
+    background: url(../images/learn/color-variations/big-leafs-blue.png) no-repeat transparent;
+}
+.colorscheme-white #bg-container .right-side-img {
+	background: url(../images/learn/color-variations/two-leafs-blue.png);
+}
+.colorscheme-white .main-sites .selected {
+    background: #FFF;
+}
+
+/* ---------- Skin Green ---------- */
+
+.colorscheme-green {
+     background: #87a54d url(../images/learn/color-variations/green-wood-bg.png) repeat;
+}
+.colorscheme-green .com-logo {
+    background: url(../images/learn/color-variations/com-logo-gray.png);
+    width: 222px;
+    height: 71px;
+	position: absolute;
+	top: 22px;
+	left: 5px;
+}
+.colorscheme-green #container {
+	background: #F0F7F3;
+}
+.colorscheme-green #bg-container .top-img {
+    background: url(../images/learn/color-variations/big-leafs-blue.png) no-repeat transparent;
+}
+.colorscheme-green #bg-container .right-side-img {
+	background: url(../images/learn/color-variations/two-leafs-blue.png);
+}
+.colorscheme-green .main-sites .selected {
+    background: #F0F7F3;
+}

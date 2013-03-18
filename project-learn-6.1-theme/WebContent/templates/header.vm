@@ -1,0 +1,43 @@
+#set($singInURL = $portletURLFactory.create($request, "58", $page.getPlid(), "ACTION_PHASE"))
+$singInURL.setParameter("saveLastPath", "0")
+$singInURL.setParameter("struts_action", "/login/login")
+$singInURL.setWindowState("maximized")
+$singInURL.setPortletMode("view")
+$singInURL.setSecure($request.isSecure())
+
+#set($searchURL = $portletURLFactory.create($request, "3", $page.getPlid(), "RENDER_PHASE"))
+$searchURL.setParameter("struts_action", "/search/search")
+$searchURL.setWindowState("maximized")
+$searchURL.setPortletMode("view")
+
+<div class="dockbar-wrapper">
+	<div class="dockbar-custom">
+		<div class="search float-left">
+			<form onsubmit="ctem_3_search(); return false;" name="ctem_3_fm" method="post" action="$searchURL">
+				<input id="searchValue" type="text" size="20" name="_3_keywords" value="#language("dockbar-search-value")" 
+								        onblur="if (this.value == '') { this.value = '#language("dockbar-search-value")'; }"
+								        onfocus="if (this.value == '#language("dockbar-search-value")') { this.value = ''; }"/>
+			 </form>
+		</div>
+		<div class="signin float-right">
+			<form method="post" name="_58_fm" class="signin-form" action="$singInURL">
+	    		<input type="hidden" value="" name="_58_redirect" class="aui-field-input aui-field-input-hidden">
+	    		<div class="signin-controls">
+	    			<div class="signin-item float-left">
+						<span class="label">#language("login")</span>
+						<input id="loginValue" type="text" value="" name="_58_login" class="signin-login">
+	    			</div>
+    				<div class="signin-item float-left">
+						<span class="label">#language("password")</span>
+						<input id="passwordValue" type="password" value="" name="_58_password" class="signin-login">
+    				</div>
+	    			<div class="signin-item float-left">
+	    					<input type="submit" value="#language("sign-in")" class="signin-submit">
+	    			</div>
+	    			<div class="clear-both"></div>
+	    		</div>
+	    	</form>
+	    </div>
+	    <div class="clear-both"></div>
+	</div>
+</div>
