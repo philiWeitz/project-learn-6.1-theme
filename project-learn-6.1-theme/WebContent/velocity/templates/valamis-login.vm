@@ -1,0 +1,26 @@
+
+<div class="valamis-login">
+	
+	<div class="login-header">
+		#if ($Header-text)
+			$!Header-text.getData()
+		#end
+	</div>
+
+	<div class="login-content">
+		<div class="login-content-margin">
+			<div class="login-text">
+				#if ($Content-text)
+					$!Content-text.getData()
+				#end
+			</div>
+	
+			<div class="login-portlet">
+				<div id="embedded-welcome-portlet">
+		  			<runtime-portlet name="58" queryString=""/>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+</div>

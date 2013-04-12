@@ -5,5 +5,16 @@
 	<compatibility>
 		<version>6.1.0+</version>
 	</compatibility>
-	<theme id="project-learn-6.1-theme" name="Project Learn theme / Grow ideas"></theme>
+	
+	<theme id="project-learn-6.1-theme" name="Project Learn theme / Grow ideas">
+	  	<color-scheme id="01" name="Default-Scheme">
+        	<default-cs>true</default-cs>
+        	<css-class>default-scheme</css-class>
+    	</color-scheme>
+    	
+    	<color-scheme id="02" name="Login-Scheme">
+        	<css-class>login-scheme</css-class>
+    	</color-scheme>
+	</theme>
+
 </look-and-feel>

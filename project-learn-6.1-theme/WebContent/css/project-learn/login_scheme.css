@@ -1,0 +1,144 @@
+
+
+@mixin roundCorners($radius: 10px) {
+  	border-radius: $radius;
+  	-moz-border-radius: $radius;
+  	-webkit-border-radius: $radius;
+}
+
+
+
+
+/* ---------- Hide general theme items ---------- */
+
+
+.login-scheme {
+	
+	#footer, #portal-header, #banner, .top-img, .top-img, .right-side-img, .mysites-selector {
+		display: none;
+	}
+	
+	.portlet-topper {
+		display: none;	
+	}
+	
+	.dockbar-wrapper {
+		display: none;
+	}
+}
+
+/* ---------- Layout definition ---------- */
+
+.login-scheme {
+
+	#wrapper {
+		width: 100%;
+	}
+	
+	#container {
+		width: 60%;
+		padding-top: 0px;	
+		margin: 90px auto 0px;
+	}
+	
+	.portlet {
+		border: none;
+		box-shadow: none;
+		background-color: transparent;
+	}
+	
+	.portlet-content {
+		padding: 0px;
+	}
+	
+	.portlet-column-content {
+		padding-top: 0px;
+	}
+	
+	.valamis-login {
+		.login-header {
+		    color: white;
+		    font-size: 20px;
+		    background-color: black;
+		    padding: 10px 10px 10px 25px;
+		}
+		
+		.login-content {
+			display: table;
+			width: 100%;
+		}
+		
+		.login-content-margin {
+			margin: 40px 10px;
+		}
+		
+		.login-text, .login-portlet {
+		    width: 50%;
+		    padding: 0 20px;
+		    display: table-cell;
+		}
+		
+		.login-portlet {
+			border-left: 1px solid black;
+			padding-left: 4%;
+    		padding-right: 4%;
+			
+			.navigation {
+				display: none;	
+			}
+		}
+	}
+	
+	.login-portlet {
+		form fieldset span .aui-field-content {
+			width: 100%;
+			display: table;			
+		}
+		
+		form .aui-fieldset .aui-field-text .aui-field-content > span {
+			width: 60%;
+			display: table-cell;
+			
+			input {
+				width: 94%;
+				padding: 6px;
+				@include roundCorners(8px);
+			}
+			
+			input:FOCUS {
+				padding: 6px;
+				color: black;
+				border: 1px solid #afafaf;
+				background-color: #d6e599;
+			}
+		}
+		
+		.aui-fieldset {
+			margin-bottom: 0px;
+		}
+		
+		form .aui-fieldset .aui-field-text .aui-field-content > label {
+			width: 40%;
+			display: table-cell;
+		}
+		
+		form .aui-fieldset .aui-field-choice {
+			display: none;
+		}
+		
+		input[type="submit"] {
+			    width: 60%;
+	   		    display: block;
+			    margin-left: 40%;
+			    background: white;
+			    @include roundCorners(8px);
+		}
+		input[type="submit"]:HOVER {
+			color: black;
+			background-color: #d6e599;
+		}
+	}
+}
+
+
+
