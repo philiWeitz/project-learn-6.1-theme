@@ -22,9 +22,6 @@ $theme.include($body_top_include)
 
 <div id="bg-container">
 
-	<div class="top-img"></div>
-	<div class="right-side-img"></div>
-
 	<div id="portal-header">
 		<div class="company-title">
 				<a class="com-logo" href="$portalUtil.getHomeURL($request)">

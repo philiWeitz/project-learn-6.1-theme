@@ -47,9 +47,11 @@ searchURL.setPortletMode(PortletMode.VIEW);
 	<div class="dockbar-custom">
 		<div class="dockbar-item float-left first-item">
 			<ul class="aui-toolbar">
-				<li class="pin-dockbar">
+				
+				<li class="pin-dockbar" style="display: none;">
 					<a href="javascript:;"><img alt='<liferay-ui:message key="pin-the-dockbar" />' src="<%= HtmlUtil.escape(themeDisplay.getPathThemeImages()) %>/spacer.png" /></a>
 				</li>
+				
 				<c:if test="<%= !group.isControlPanel()%>">
 					<li class="search">
 						<aui:form method="POST" action="<%=searchURL.toString() %>" class="custom-search">
@@ -77,7 +79,7 @@ searchURL.setPortletMode(PortletMode.VIEW);
 				<c:if test="<%= !group.isControlPanel()%>">
 					<li class="control-panel">
 						<a href="<%= themeDisplay.getURLControlPanel() %>">
-							<span class="control-panel-inner">&nbsp;</span>
+							<liferay-ui:message key="dockbar-control-panel" />
 						</a>
 					</li>
 				</c:if>

@@ -1,7 +1,7 @@
 /* ---------- Base styles ---------- */
 
 body {
-	background: #313d4b url(../images/learn/blue-wood-bg.png) repeat fixed;
+	background: #313d4b url(../images/learn/valamis-white-noise.jpg) repeat fixed;
 	font-size: 13px;
 	font-family: 'Lato','Arial', sans-serif;
     min-width: 1044px;
@@ -13,33 +13,18 @@ body {
 	margin: 0 auto;
 	position: relative;
 }
-#bg-container .top-img {
-    background: url("../images/learn/big-leafs.png") no-repeat transparent;
-    height: 83px;
-    left: 38%;
-    position: absolute;
-    top: 45px;
-    width: 83px;
-}
-#bg-container .right-side-img {
-	position: absolute;
-	background: url(../images/learn/two-leafs.png);
-	width: 43px;
-	height: 48px;
-	left: 95%;
-    top: 60%;
-}
 #container {
 	width: 90%;
 	margin: 0 auto;
-	background: #F1F3F4;
+	background: white;
 	border: #243342 0 1px 1px 1px solid;
 	border-top: 0px;
 	position: relative;
 	padding-top: 5px;
-	-moz-box-shadow: 0 4px 3px rgba(38, 38, 38, 0.7);
-	-webkit-box-shadow: 0 4px 3px rgba(38, 38, 38, 0.7);
-	box-shadow: 0 4px 3px rgba(38, 38, 38, 0.7);
+
+	-moz-box-shadow: 0 0 2px gray;
+  	-webkit-box-shadow: 0 0 2px gray;
+	box-shadow: 0 0 2px gray;
 }
 #wrapper {
 	background: none;
@@ -48,7 +33,7 @@ body {
 	position: relative;
 }
 a {
-	color: #E26447;
+	color: #2c2c2c;
 	text-decoration: none;
 }
 a:hover {
@@ -172,15 +157,15 @@ Alternative styles ends ---------*/
 /* ---------- Portal-header ---------- */
 
 #portal-header {
-	width: 89%;
+	width: 90%;
 	margin: 0 auto;
-	height: 120px;
+	height: 90px;
 	position: relative;
 }
 .com-logo {
-    background: url(../images/learn/com-logo.png);
-    width: 222px;
-    height: 71px;
+    background: url(../images/learn/valamis-logo.png);
+    width: 154px;
+    height: 36px;
 	position: absolute;
 	top: 22px;
 	left: 5px;
@@ -191,25 +176,45 @@ ul.main-sites {
 	bottom: 0;
     margin: 0;
     height: 32px;   
+    z-index: 1;
 }    
 .main-sites li {
     display: inline;
-    background: #495966;
-    -webkit-border-radius: 5px 5px 0 0;
-   	-moz-border-radius: 5px 5px 0 0;
-   	border-radius: 6px 6px 0 0;
+    background: #d6e599;
    	padding: 9px 0px 9px 0px;
-   	margin-left: 9px;  
- /* border: solid 2px #2B3D4C; */
-   	-moz-box-shadow: 0px 0px 5px rgba(38, 38, 38, 0.7);
-	-webkit-box-shadow: 0px 0px 5px rgba(38, 38, 38, 0.7);
-	box-shadow: 0px 0px 5px rgba(38, 38, 38, 0.7);
 	display: block;
 	float: left;
 	height: 14px;
-} 
+	border-left: 1px solid #ecf3d2;
+	border-right: 1px solid #c2d08b;
+	
+	-moz-box-shadow: 0 0 4px gray;
+  	-webkit-box-shadow: 0 0 4px gray;
+	box-shadow: 0 0 4px gray;
+}
+.main-sites li:after {
+    background: none repeat scroll 0 0 white;
+    bottom: -4px;
+    content: "";
+    height: 4px;
+    left: -5%;
+    position: absolute;
+    width: 105%;
+}
+.main-sites li:FIRST-CHILD {
+    -webkit-border-radius: 5px 0 0 0;
+   	-moz-border-radius: 5px 0 0 0;
+   	border-radius: 6px 0 0 0;
+   	border-left: none;
+}
+.main-sites li:LAST-CHILD {
+    -webkit-border-radius: 0 5px 0 0;
+   	-moz-border-radius: 0 5px 0 0;
+   	border-radius: 0 6px 0 0;	
+   	border-right: none;
+}
 .main-sites li a {
-    color: #FFF;
+	color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.9em;
@@ -217,11 +222,8 @@ ul.main-sites {
     letter-spacing: 0.01em;
     padding: 0px 15px 0px 15px;
 }
-.main-sites .selected {
-    background: #F1F3F4;
-}
 .main-sites .selected a {
-    color: #212223;
+    color: #2C2C2C;;
 }
 
  
@@ -451,8 +453,7 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
     min-width: 1160px;
 }
 .dockbar {
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.3);
+    background: #2C2C2C;
     border-bottom: 1px solid #1A2123;
     font-size: 13px;
     padding: 1px 5px;
@@ -470,54 +471,19 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
     color: #FF931E;
     font-weight: bold;
 }
-.dockbar .my-sites .menu-button {
-   border: 2px solid #CC563B;
-   background: #ea6941;
-   background: -webkit-gradient(linear, left top, left bottom, from(#fe8f20), to(#ea6941));
-   background: -webkit-linear-gradient(top, #fe8f20, #ea6941);
-   background: -moz-linear-gradient(top, #fe8f20, #ea6941);
-   background: -ms-linear-gradient(top, #fe8f20, #ea6941);
-   background: -o-linear-gradient(top, #fe8f20, #ea6941);
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   text-decoration: none;
-   vertical-align: middle;
-   margin: 0 0 0 0;
-   }
-.dockbar .my-sites .menu-button:hover {
-   border-top-color: #cc563b;
-   background: #cc563b;
-   }
-.dockbar .my-sites .menu-button:active {
-   border-top-color: #cc563b;
-   background: #cc563b;
-   }
-.dockbar .my-sites a {
-  color: #FFF !important;
-  text-decoration: none;
-}
-.dockbar .my-sites a:hover {
-  color: #f4e5e1 !important;
-  text-decoration: none;
-}
 .user-links {
   padding: 10px 14px;
 }
 .aui-toolbar li {
     display: inline-block;
-    float: left;
     margin: 0 0 0 5px;
     padding: 0;
     vertical-align: middle;
 }
 .aui-toolbar li.toggle-controls {
-    margin: 3px 0 0;
     vertical-align: middle;
 }
 .aui-toolbar li.control-panel {
-    margin: 3px 0 0 5px;
     vertical-align: middle;
 }
 .search input[type="text"], select, textarea, .textarea, button {
@@ -542,63 +508,24 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
     width: 0px;
 }
 .dockbar .toggle-controls a {
-    /*background: url("../images/learn/checked.png") no-repeat scroll 0 50% transparent;
-    padding: 4px 0px 4px 26px;*/
-    border: 2px solid #495966;
-    background: #495966;
-    color: #b2c6cf;
-    -moz-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    display: block;
-    padding: 3px 8px 4px;
+    background: url("../images/learn/checkbox_checked.png") no-repeat scroll 0 0 transparent;
+    padding: 4px 0px 4px 26px;
 }
 .controls-hidden .toggle-controls a {
-    /*background-image: url("../images/learn/unchecked.png");*/
-    color: #D1DFE5;
-    background: #495966;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    -o-box-shadow: none;
-    box-shadow: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(#899c9e), to(#495966));
-    background: -webkit-linear-gradient(top, #899c9e, #495966);
-    background: -moz-linear-gradient(top, #899c9e, #495966);
-    background: -ms-linear-gradient(top, #899c9e, #495966);
-    background: -o-linear-gradient(top, #899c9e, #495966);
-}
-.controls-hidden .toggle-controls a:hover {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    background: url("../images/learn/checkbox_unchecked.png") no-repeat scroll 0 0 transparent;
+    padding: 4px 0px 4px 26px;
 }
 .dockbar .menu-button {
-   border: 2px solid #495966;
-   background: #495966;
-   background: -webkit-gradient(linear, left top, left bottom, from(#899c9e), to(#495966));
-   background: -webkit-linear-gradient(top, #899c9e, #495966);
-   background: -moz-linear-gradient(top, #899c9e, #495966);
-   background: -ms-linear-gradient(top, #899c9e, #495966);
-   background: -o-linear-gradient(top, #899c9e, #495966);
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   text-decoration: none;
-   vertical-align: middle;
-   display: inline-block;
-   padding: 7px 12px 8px 7px ;
-   }
+	background: transparent;
+}
 .dockbar .menu-button:hover {
    background: #495966;
-   color: #b2c6cf;
-   -moz-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
-   }
+/*    color: #b2c6cf; */
+/*    -moz-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3); */
+/*     -webkit-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3); */
+/*     -o-box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3); */
+/*     box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3); */
+ }
 .docbar .menu-button:active, .dockbar .menu-button-active a {
    color: #b2c6cf;
 }
@@ -643,25 +570,12 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
 	margin: 1px auto;
 	width: 90%;
     min-width: 1044px;
-    padding: 5px 0;
+    padding: 2px 0;
     margin: 0 auto;
     overflow: hidden;
 }
 .dockbar-item .control-panel a {
-    border: 2px solid #495966;
-    background: #495966;
-    background: -webkit-gradient(linear, left top, left bottom, from(#899c9e), to(#495966));
-    background: -webkit-linear-gradient(top, #899c9e, #495966);
-    background: -moz-linear-gradient(top, #899c9e, #495966);
-    background: -ms-linear-gradient(top, #899c9e, #495966);
-    background: -o-linear-gradient(top, #899c9e, #495966);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    display: block;
-    width: 25px;
-    height: 25px;
-    margin-right: 42px;
+    margin: 0px 10px;
 }
 .dockbar-item .control-panel a:hover {
     -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
@@ -734,10 +648,10 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
 
 .dockbar-wrapper {
     background: #000;
-    background: rgba(0, 0, 0, 0.3);
+    background: #2C2C2C;
     border-bottom: 1px solid #1A2123;
     font-size: 13px;
-    padding: 7px 0px;
+    padding: 10px 0px 1px;
     position: relative;
     color: #D1DFE5;
     height: 33px;
@@ -781,8 +695,12 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
    	-moz-border-radius: 5px;
    	border-radius: 5px;
    	color: #243342;
-    margin-top: 3px;
     height: 20px;
+}
+.dockbar-custom .search input[type="text"], .dockbar-custom .search  input[type="password"] {
+	background: transparent;
+	border: none;
+	color: white;
 }
 .dockbar-custom input[type="text"].signin-login, .dockbar-custom input[type="password"].signin-login {
     border: none;
@@ -793,27 +711,12 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
     margin-right: 10px;
 }
 .dockbar-custom input[type="submit"], .dockbar-custom input[type="button"], .dockbar-custom input[type="reset"], .dockbar-custom button {
-   border: 2px solid #CC563B;
-   background: #ea6941;
-   background: -webkit-gradient(linear, left top, left bottom, from(#fe8f20), to(#ea6941));
-   background: -webkit-linear-gradient(top, #fe8f20, #ea6941);
-   background: -moz-linear-gradient(top, #fe8f20, #ea6941);
-   background: -ms-linear-gradient(top, #fe8f20, #ea6941);
-   background: -o-linear-gradient(top, #fe8f20, #ea6941);
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   text-shadow: none;
-   text-decoration: none;
-   vertical-align: middle;
-   font-size: 13px;
-   color: #FFF;
-   padding: 7px 8px 8px 7px;
-   text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
-
-   /*color: #FFF;
-   font-size: 0.9em;
-   padding: 4px;*/ 
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: inherit;
+    margin-top: 3px;
+    padding: 0;
+    vertical-align: middle;
 }
 .dockbar-wrapper .dockbar-custom input[type="text"].signin-login, .dockbar-wrapper .dockbar-custom input[type="password"].signin-login {
     margin-top: 3px;
@@ -825,12 +728,12 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
     opacity: 0.3;
     margin-right: 23px;
     height: 16px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 #loginValue {
     opacity: 0.3;
     height: 16px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 #passwordValue.focus {
     opacity: 1;
@@ -859,7 +762,7 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
 	position: absolute;
 	top: 28px;
 	right: -8px;
-	background: #243342;
+	background: #2c2c2c;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
