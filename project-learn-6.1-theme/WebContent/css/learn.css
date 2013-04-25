@@ -462,7 +462,7 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
 }
 .dockbar a {
     color: #D1DFE5;
-    font-weight: bold;
+    font-weight: normal;
     text-shadow: none;
     text-decoration: none;
 }
