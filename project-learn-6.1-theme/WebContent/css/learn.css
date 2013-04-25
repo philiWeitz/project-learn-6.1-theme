@@ -3,7 +3,7 @@
 body {
 	background: #313d4b url(../images/learn/valamis-white-noise.jpg) repeat fixed;
 	font-size: 13px;
-	font-family: 'Lato','Arial', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
     min-width: 1044px;
     width: 100%;
 }
@@ -17,14 +17,12 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	background: white;
-	border: #243342 0 1px 1px 1px solid;
-	border-top: 0px;
 	position: relative;
 	padding-top: 5px;
 
-	-moz-box-shadow: 0 0 2px gray;
-  	-webkit-box-shadow: 0 0 2px gray;
-	box-shadow: 0 0 2px gray;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 2px 7px rgba(0,0,0,0.4);
+  	-webkit-box-shadow: 0 2px 7px rgba(0,0,0,0.4);
 }
 #wrapper {
 	background: none;
@@ -167,7 +165,7 @@ Alternative styles ends ---------*/
     width: 154px;
     height: 36px;
 	position: absolute;
-	top: 22px;
+	top: 28px;
 	left: 5px;
 }
 ul.main-sites {
@@ -215,15 +213,16 @@ ul.main-sites {
 }
 .main-sites li a {
 	color: white;
-    text-transform: uppercase;
     font-weight: bold;
     font-size: 0.9em;
     text-decoration: none;
     letter-spacing: 0.01em;
     padding: 0px 15px 0px 15px;
+    vertical-align: top;
 }
 .main-sites .selected a {
     color: #2C2C2C;;
+    text-shadow: 0 1px 1px #FFF;
 }
 
  
@@ -656,6 +655,10 @@ logo .current-site, #navigation, #navigation a, .site-breadcrumbs ul, .aui-form-
     color: #D1DFE5;
     height: 33px;
     min-width: 1160px;
+    
+    box-shadow: 0 2px 7px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 2px 7px rgba(0,0,0,0.4);
+  	-webkit-box-shadow: 0 2px 7px rgba(0,0,0,0.4);
 }
 .ie7 .dockbar-wrapper {
     zoom: 1;
@@ -931,6 +934,7 @@ input.focus, textarea.focus {
     text-shadow: none;
 }
 input[type="submit"], input[type="button"], input[type="reset"], button {
+	font-weight: normal;
 	text-shadow: none;
 }
 
